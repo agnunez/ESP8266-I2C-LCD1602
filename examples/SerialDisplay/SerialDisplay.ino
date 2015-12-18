@@ -1,3 +1,11 @@
+  // ESP8266 with 16x2 i2c LCD
+  // Compatible with the Arduino IDE 1.6.6
+  // Library https://github.com/agnunez/ESP8266-I2C-LCD1602
+  // Original Library https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library
+  // Modified for ESP8266 with GPIO0-SDA GPIO2-SCL and LCD1206 display
+  // edit library and change Wire.begin() by Wire.begin(sda,scl) or other GPIO's used for I2C
+  // and access from lcd.begin(sda,scl)
+  
 /**
  * Displays text sent over the serial port (e.g. from the Serial Monitor) on
  * an attached LCD.

@@ -1,10 +1,10 @@
-// ESP8266 with 20x4 i2c LCD
-// Compatible with the Arduino IDE 1.6.6
-// Current Library https://github.com/agnunez/ESP8266-I2C-LCD1602
-// Original Library https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library
-// Agustin Nunez Dec 2015
-// Modified for ESP8266 with GPIOx->SDA GPIOx->SCL and LCD1206 display
-// edit library and change Wire.begin() by Wire.begin(0,2) or other GPIO's used for I2C
+  // ESP8266 with 16x2 i2c LCD
+  // Compatible with the Arduino IDE 1.6.6
+  // Library https://github.com/agnunez/ESP8266-I2C-LCD1602
+  // Original Library https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library
+  // Modified for ESP8266 with GPIO0-SDA GPIO2-SCL and LCD1206 display
+  // edit library and change Wire.begin() by Wire.begin(sda,scl) or other GPIO's used for I2C
+  // and access from lcd.begin(sda,scl)
   
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h> 
