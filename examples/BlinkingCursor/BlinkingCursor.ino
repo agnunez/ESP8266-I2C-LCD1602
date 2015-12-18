@@ -7,7 +7,7 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 void setup()
 {
 	// initialize the LCD
-	lcd.begin();
+	lcd.begin(0,2);
 }
 
 void loop()
