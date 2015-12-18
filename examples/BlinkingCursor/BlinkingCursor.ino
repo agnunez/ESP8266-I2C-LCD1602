@@ -13,7 +13,7 @@ void setup()
 void loop()
 {
 	bool blinking = true;
-	lcd.cursor();
+	lcd.cursor(0,2);
 
 	while (1) {
 		if (blinking) {
